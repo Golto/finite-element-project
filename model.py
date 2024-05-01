@@ -94,13 +94,6 @@ class Model:
         return np.diag( diag1, -1 ) + np.diag( diag, 0 ) + np.diag( diag1, 1 )
     
     def getRighHandSide(self, u: np.array) -> np.array:
-        b = np.ones(self.nums_step)
-        h = self.thickness
-        innerMesh = self.innerMesh
-
-        return b
-    
-    def getRighHandSide(self, u: np.array) -> np.array:
         b = np.zeros(self.nums_step)
         h = self.thickness
         mesh = self.mesh
